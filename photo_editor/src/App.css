@@ -1,0 +1,128 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+a:hover{
+  color: var(--pink) !important;
+}
+
+.app{
+  display: flex;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+.image_format {
+
+
+  display: grid;
+
+  margin: auto;
+}
+
+.upload_text {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+
+  padding: 10px;
+}
+
+.drop-container {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px dashed #555;
+  color: #444;
+  cursor: pointer;
+  transition: background .2s ease-in-out, border .2s ease-in-out;
+}
+
+.drop-container:hover {
+  background: #eee;
+  border-color: #111;
+}
+
+.drop-container:hover .drop-title {
+  color: #222;
+}
+
+.drop-title {
+  color: #444;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  transition: color .2s ease-in-out;
+}
+
+.resize_img {
+  max-width:100%;
+    height:auto;
+
+}
+
+
+
+.image {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  background-image: url('https://placekitten.com/1920/1280');
+  background-size: 600px 400px;
+}
+
+.blur-wrap {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: (400px - 200px) / 2;
+  left: (600px - 300px) / 2;
+  overflow: hidden;
+  cursor: move;
+}
+
+
+
+.blur {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  bottom: -10px;
+  right: -10px;
+  background-image: url('https://placekitten.com/1920/1280');
+  background-position: ((300px+ 10px - 600px) / 2) ((200px + 10px - 400px) / 2);
+  background-size: $img-width $img-height;
+  filter: blur(10px);
+}
+
+h1 {
+  text-align: center;
+  margin: 10px;
+  font-size: 1.2em;
+}
+
