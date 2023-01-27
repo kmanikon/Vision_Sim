@@ -1,1 +1,12 @@
-
+Flask
+Gunicorn
+pillow
+numpy
+opencv-python
+torch
+matplotlib
+Werkzeug
+imgkit
+timm
+CORS
+flask_cors
